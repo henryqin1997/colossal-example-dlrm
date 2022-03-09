@@ -397,6 +397,8 @@ def run():
 
     use_gpu = args.use_gpu and torch.cuda.is_available()
 
+    colossalai.launch_from_torch(config='./config.py')
+
     if not args.debug_mode:
         ext_dist.init_distributed(local_rank=args.local_rank, use_gpu=use_gpu, backend=args.dist_backend)
 
