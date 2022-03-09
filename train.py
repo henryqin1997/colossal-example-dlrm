@@ -29,7 +29,7 @@ from torch.utils.tensorboard import SummaryWriter
 
 import colossalai
 import dlrm
-import extend_distributed_backup as ext_dist
+import extend_distributed as ext_dist
 from colossalai.engine.schedule import NonPipelineSchedule
 
 
