@@ -648,7 +648,7 @@ def run():
         # specify the optimizer algorithm
         opts = {
             "sgd": torch.optim.SGD,
-            "rwsadagrad": dlrm_model.RWSAdagrad,
+            "rwsadagrad": dlrm.RWSAdagrad,
             "adagrad": torch.optim.Adagrad,
         }
 
