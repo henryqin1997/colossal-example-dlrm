@@ -28,7 +28,8 @@ from torch.optim.lr_scheduler import _LRScheduler
 from torch.utils.tensorboard import SummaryWriter
 
 import colossalai
-from dlrm import dlrm ,extend_distributed_backup as ext_dist
+import dlrm
+import extend_distributed_backup as ext_dist
 from colossalai.engine.schedule import NonPipelineSchedule
 
 
