@@ -1,21 +1,3 @@
-# Copyright (c) Facebook, Inc. and its affiliates.
-#
-# This source code is licensed under the MIT license found in the
-# LICENSE file in the root directory of this source tree.
-#
-# Description: generate inputs and targets for the dlrm benchmark
-# The inpts and outputs are generated according to the following three option(s)
-# 1) random distribution
-# 2) synthetic distribution, based on unique accesses and distances between them
-#    i) R. Hassan, A. Harris, N. Topham and A. Efthymiou "Synthetic Trace-Driven
-#    Simulation of Cache Memory", IEEE AINAM'07
-# 3) public data set
-#    i)  Criteo Kaggle Display Advertising Challenge Dataset
-#    https://labs.criteo.com/2014/02/kaggle-display-advertising-challenge-dataset
-#    ii) Criteo Terabyte Dataset
-#    https://labs.criteo.com/2013/12/download-terabyte-click-logs
-
-
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 # others
@@ -38,7 +20,6 @@ from torch.utils.data import Dataset, RandomSampler
 
 import data_loader_terabyte
 import mlperf_logger
-
 
 # Kaggle Display Advertising Challenge Dataset
 # dataset (str): name of dataset (Kaggle or Terabyte)
