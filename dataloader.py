@@ -679,18 +679,18 @@ class RandomDataset(Dataset):
 def collate_wrapper_random_offset(list_of_tuples):
     # where each tuple is (X, lS_o, lS_i, T)
     (X, lS_o, lS_i, T) = list_of_tuples[0]
-    return (X,
+    return ((X,
             torch.stack(lS_o),
-            lS_i,
+            lS_i),
             T)
 
 
 def collate_wrapper_random_length(list_of_tuples):
     # where each tuple is (X, lS_o, lS_i, T)
     (X, lS_o, lS_i, T) = list_of_tuples[0]
-    return (X,
+    return ((X,
             offset_to_length_converter(torch.stack(lS_o), lS_i),
-            lS_i,
+            lS_i),
             T)
 
 
