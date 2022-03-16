@@ -450,9 +450,9 @@ def run():
         nbatches_test = len(test_ld)
 
 
-    for batch in train_ld:
-        print(batch)
-        exit(0)
+    # for batch in train_ld:
+    #     print(batch)
+    #     exit(0)
 
     args.ln_emb = ln_emb.tolist()
     if args.mlperf_logging:
